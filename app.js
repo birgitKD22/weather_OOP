@@ -4,11 +4,12 @@ const ls = new LS()
 const initCity = ls.getCity()
 
 const form = document.querySelector('#change-city')
-form.addEventListener('submit', changeCityWeather)
+form.addEventListener('submit', changeWeather)
 
-function changeCityWeather(event){
+function changeWeather(event){
 	const city = document.querySelector('#city-name').value
-   weather.changeCity(city)
+  	weather.changeCity(city)
+	ls.setCity(city)
 	getWeather()
 	document.querySelector('#city-name').value = ''
 	event.preventDefault()
