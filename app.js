@@ -1,4 +1,5 @@
 const weather = new Weather(weatherLocation)
+const ui = new UI()
 
 // get city weather
 function getWeather() {
