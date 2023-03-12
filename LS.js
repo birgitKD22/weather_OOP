@@ -12,3 +12,7 @@ class LS {
 		}
 		return this.city;
     }
+		setCity(city){
+		localStorage.setItem('city', city)
+	}
+}
