@@ -1,5 +1,7 @@
-const weather = new Weather('Tartu')
+const weather = new Weather('initCity')
 const ui = new UI()
+const ls = new LS()
+const initCity = ls.getCity()
 
 const form = document.querySelector('#change-city')
 form.addEventListener('submit', changeCityWeather)
