@@ -1,4 +1,4 @@
-const weather = new Weather(weatherLocation)
+const weather = new Weather('Tartu')
 const ui = new UI()
 
 const form = document.querySelector('#change-city')
